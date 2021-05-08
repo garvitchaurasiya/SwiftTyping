@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Swift Typing</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+          $("main").hide();
+          $("logo").delay(4000).fadeOut();
+          $("main").delay( 4300 ).fadeIn( 400 );
+        })
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="logo.css">
+
+    <script src="logo.js" defer></script>
+
+    <link rel="stylesheet" href="background.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+
+    
+</head>
+<body>
+
+<logo>
+    <div id="container">
+      <span class="title" id="text1"></span>
+      <span class="title" id="text2"></span>
+
+      <svg id="filters">
+        <defs>
+          <filter id="threshold">
+            Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent.
+            <feColorMatrix in="SourceGraphic"
+                type="matrix"
+                values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 255 -140" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- The SVG filter used to create the merging effect -->
+
+
+</logo>
+
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>  
+
+
+  <main>
+<div class="header">
+    
+  <div class = "timer" id = "timer" >00:00</div>
+    <div class = "options" id="options">
+        <select id="dropDown">
+            <option >Test 1</option>
+            <option >Test 2</option>
+            <option>Test 3</option>
+            <option>Test 4</option>
+            <option>Test 5</option>
+            <option>Random Quote</option>
+        </select>
+
+        <button id="btn" class="custom-btn btn-3" onclick="resetTimer()"><span>Load Test</span></button>
+    </div>
+    <div class="container">
+        <div class="quote-display" id="quoteDisplay"></div>
+        <!-- <textarea onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off id="quoteInput" class = "quote-input" autofocus></textarea> -->
+        <textarea id="quoteInput" class = "quote-input" autofocus></textarea>
+    </div>
+
+<!--Content starts-->
+<div class="content flex" >
+    <div class = "parameter" id="parameter">
+        <span class = "speed" id="speed">Speed : 0 WPM</span> &nbsp; &nbsp;
+        <span class="accuracy" id="accuracy">Accuracy : 100%</span>
+    </div>
+</div>
+<!--Content ends-->
+        <div>
+            <table class="table table-striped" id="leaderBoard">
+                <tr>
+                    <td>Attempts</td>
+                    <td>Speed</td>
+                    <td>Accuracy</td>
+                    <td>Time</td>
+                </tr>
+            </table>
+        </div>
+</div>
+</main>
+ 
+</body>
+</html>

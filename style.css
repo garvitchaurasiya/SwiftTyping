@@ -1,0 +1,257 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+
+body {
+    display: flex;
+    font-family:  'Nunito', sans-serif;
+    flex-direction: column;
+}
+
+
+.container {
+    padding:1rem;
+    margin-top: 5%;
+    max-width: 75%;
+    display: inline-block;
+}
+
+.timer {
+    text-align: center;
+    top: 2rem;
+    font-size: 3rem;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
+
+.quote-display {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.quote-input{
+    color: white;
+    background-color: transparent;
+    border: 3px solid #c4edfa;
+    outline: none;
+    width: 75%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-size: 20px;
+}
+.quote-input:focus {
+    border-color: black;
+}
+
+.correct {
+    color : #59e059;
+}
+
+.incorrect {
+    color: #c72727;
+    text-decoration: underline;
+}
+
+#parameter{
+    position: relative;
+    margin: 0% 0% 3% 0%;
+    text-align: center;
+    font-family:'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.options{
+    position: absolute;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-left: 2%;
+    display:flex;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-size: 18px;
+  }
+
+  .btn-3 {
+  background:;
+  background: linear-gradient(0deg, #395163 0%, #003367 100%);
+  width: 130px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0;
+  border: none;
+  margin-left: 5px;
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: #395163;
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: whitesmoke;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: #395163;
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: #395163;
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+#jstext {
+    text-align: center;
+    font-size: 90px;
+}
+
+td {
+    padding:10px;
+}
+
+.leaderBoard{
+    width: 75%;
+    align-self: center;
+}
+
+#dropDown{
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 7px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-size: 18px;
+    background: linear-gradient(0deg, #395163 0%, #003367);
+    background-color: #395163;
+    color: white;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+#home{
+  margin-left: 15px;
+  font-size: 25px;
+  color: hotpink; 
+}
+
+#about{
+  margin-right: 15px;
+  font-size: 25px;
+  color: hotpink;
+}
+
+
+body {
+  margin:0;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  color:white;
+}
+
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  color: white;
+}
