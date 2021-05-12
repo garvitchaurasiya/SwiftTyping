@@ -54,7 +54,7 @@ body {
 }
 
 .incorrect {
-    color: #c72727;
+    color: #ff5555;
     text-decoration: underline;
 }
 
@@ -254,4 +254,12 @@ body {
   height:20vh;
   text-align:center;
   color: white;
+}
+
+#about{
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(187, 186, 186);
 }

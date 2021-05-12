@@ -7,12 +7,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script type="text/javascript">
+
+         // localStorage.setItem("serialNumber", "abc123def456");
+
+                    // console.log(localStorage.getItem("serialNumber"));
+
+
+
         $(document).ready(function(){
 
           $("main").hide();
           $("logo").delay(4000).fadeOut();
           $("main").delay( 4300 ).fadeIn( 400 );
+
         })
+
+
     </script>
 
     <link rel="stylesheet" href="style.css">
@@ -25,8 +35,6 @@
 
     <link rel="stylesheet" href="background.css">
 
-
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
@@ -35,6 +43,7 @@
 
     <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
 
+    <link rel="shortcut icon" type="image/jpg" href="croped.jpg"/>
     
 </head>
 <body>
@@ -59,9 +68,6 @@
       </svg>
     </div>
 
-    <!-- The SVG filter used to create the merging effect -->
-
-
 </logo>
 
 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
@@ -72,15 +78,19 @@
 
   <main>
 <div class="header">
+
+  <div>
+    <a id="about" href="about.html">About</a>
+  </div>
     
   <div class = "timer" id = "timer" >00:00</div>
     <div class = "options" id="options">
         <select id="dropDown">
-            <option >Test 1</option>
-            <option >Test 2</option>
-            <option>Test 3</option>
-            <option>Test 4</option>
-            <option>Test 5</option>
+            <option>Level 1</option>
+            <option>Level 2</option>
+            <option>Level 3</option>
+            <option>Level 4</option>
+            <option>Level 5</option>
             <option>Random Quote</option>
         </select>
 

@@ -91,33 +91,35 @@ function getTest(selectedTest){
     if (selectedTest == 0){
         correctLetter = 0;
         incorrectLetter = 0;
-        str = "I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter. This is much more than I ever signed up to do. She had been told time and time again that the most important steps were the first and the last. It was something that she carried within her in everything she did, but then he showed up and disrupted everything. He told her that she had it wrong. The first step wasn't the most important. The last step wasn't the most important. It was the next step that was the most important.";
+        str = "Hold the door for someone has their hands full. It's pretty easy. Just hold the door as you see them approaching. They will be truly glad they didn't have to drop their things just to open a door. If someone gives you a nice gift, write a physical thank you letter and put that into the mail. An actual thank you letter on paper means a lot more than just an e-mail, even in today's modern times. If you are having a meal with someone, please turn off your cell phone. Unless you are a doctor on call, it is not polite to eat and still be wired. You owe it to disconnect from the hustle and bustle of the world for a few minutes."
         return str;
         
     }
     else if(selectedTest == 1){
         correctLetter=0;
         incorrectLetter=0;
-        str = "If you can imagine a furry humanoid seven feet tall, with the face of an intelligent gorilla and the braincase of a man, you'll have a rough idea of what they looked like -- except for their teeth. The canines would have fitted better in the face of a tiger, and showed at the corners of their wide, thin-lipped mouths, giving them an expression of ferocity. The boy walked down the street in a carefree way, playing without notice of what was about him. He didn't hear the sound of the car as his ball careened into the road. He took a step toward it, and in doing so sealed his fate.";
+        str = 'Drink at least six glasses of fresh water every day. All doctors will tell you this; this helps you detoxify and cleanse your system on a daily basis. when your physical health is well; this is kindness to oneself on the physical level. Observe silence for at least one hour each day. This way, others around you will benefit from that silence; this is an indirect act of kindness. If you can, read the "Dhammapada" (Sayings of the Buddha). You will learn a lot about kindness and compassion in this historical text. If you can, read the "Sermon on the Mount" given by Jesus in the Bible. You will learn a lot about kindness, compassion, and love in this historical text.'
         return str;
     }
     else if(selectedTest == 2){
         correctLetter=0;
         incorrectLetter=0;
-        str = "You can decide what you want to do in life, but I suggest doing something that creates. Something that leaves a tangible thing once you're done. That way even after you're gone, you will still live on in the things you created. If you can imagine a furry humanoid seven feet tall, with the face of an intelligent gorilla and the braincase of a man, you'll have a rough idea of what they looked like -- except for their teeth. The canines would have fitted better in the face of a tiger, and showed at the corners of their wide, thin-lipped mouths, giving them an expression of ferocity.";
+        str = 'Get organized. An organized life allows others to sense order and this is indirectly being kind to others through this approach. Apply the perennial wisdom of Ben Franklin, where possible: "early to bed, early to rise, makes one both healthy and wise". Practice mindfulness about diversity. No two people think alike. In this way, better communication between people becomes possible. When you serve others coffee or tea, always ask them how they like their drink. Perhaps they like some cream or milk or sugar or sweetener. Not everyone likes their coffee black, for example. Just keep on smiling, as much as you can. People always enjoy positive energy, especially during difficult times. This is a great universal approach to kindness.'
+
         return str;
     }
     else if(selectedTest == 3){
         correctLetter=0;
         incorrectLetter=0;
-        str = "Greg understood that this situation would make Michael terribly uncomfortable. Michael simply had no idea what was about to come and even though Greg could prevent it from happening, he opted to let it happen. It was quite ironic, really. It was something Greg had said he would never wish upon anyone a million times, yet here he was knowingly letting it happen to one of his best friends. He rationalized that it would ultimately make Michael a better person and that no matter how uncomfortable, everyone should experience racism at least once in their lifetime."
+        str = "Avoid excess alcohol (for those 21 years and older only). If you are a minor, do not drink alcohol until you are 21 years of age. Please consult your doctor or physician for optimal advice regarding the consumption of alcohol. This is kindness to oneself. Avoid smoking altogether. Smoking is considered a major cause of lung cancer by the American Medical Association. Please consult your doctor or physician regarding the effects of smoking on the human body. Taking care of your health, indeed, is an act of kindness toward oneself. Take calcium supplements in conjunction with your doctor's recommendations so that you don't get bone diseases like osteoporosis later on in life. Take care of your bones; this is kindness to oneself."
         return str;
     }
     else if(selectedTest == 4){
         correctLetter =0;
         incorrectLetter=0;
         // str = "This is a sample.";
-        str = "Sometimes it's simply better to ignore the haters. That's the lesson that Tom's dad had been trying to teach him, but Tom still couldn't let it go. He latched onto them and their hate and couldn't let it go, but he also realized that this wasn't healthy. That's when he came up with his devious plan. Do you think you're living an ordinary life? You are so mistaken it's difficult to even explain. The mere fact that you exist makes you extraordinary. The odds of you existing are less than winning the lottery, but here you are. Are you going to let this extraordinary opportunity pass?";
+        str = 'Be grateful. The universe will reciprocate with great kindness. Visualize others with happiness. Visualize others enjoying a sunny day outside. Visualize dry and parched areas with new and abundant rains. Visualize sick people receiving healing energies. Awaken to Universal Love: "All you need is love". John Lennon Awaken to Universal Compassion: "May all beings to experience happiness and the causes of happiness" - the 14th Dalai Lama. Awaken to wisdom and learning. Awaken to patience and tolerance.';
+
         return str;
     }
     else if(selectedTest == 5){
