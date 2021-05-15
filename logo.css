@@ -33,3 +33,17 @@ body {
 	
 	user-select: none;
 }
+
+.quote{
+	position: absolute;
+	text-align: center;
+	margin-top:65vh;
+	width: 100%;
+	font-weight: 500;
+	font-size:20px;
+	letter-spacing: 2px;
+    font-family: 'lato',sans-serif;
+    background: -webkit-linear-gradient(white, #739dc7);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

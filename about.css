@@ -1,62 +1,103 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-body {background: linear-gradient(0deg, #395163 0%, #003367 100%); overflow: hidden ; font-family: roboto; -webkit-font-smoothing: antialiased; margin: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+body {background: linear-gradient(0deg, black 0%, #003367 100%); overflow: hidden ; font-family: roboto; -webkit-font-smoothing: antialiased; margin: 0;}
+
 .flex {
     display: flex;
     flex-direction: row;
 }
 
-.slider-wrapper div {position: relative;}
-.slider-wrapper {}
-
-.slide-image{
-    margin-top:20vh;
-    margin-left:4vw;
+.slider-wrapper div {
+    position: relative;
 }
 
-.slide-content {width: 45vw; color: #fff; padding:;}
+.slide-content {
+    background-color:;
+    margin-top:20vh; 
+    margin-left:8vw; 
+    width: 70%;
+    color:#fff;
+
+}
 
 
-.arrows{width: 3.5vw; position: absolute; right:8vw; top:85vh;}
-.arrow {display: inline-block; position: absolute; width: 1.2vw; height: 1.2vw; background: transparent; text-indent: -9999px; border-top: 0.15vw solid #fff; border-left: 0.15vw solid #fff; transition: all .1s ease-in-out; text-decoration: none; color: transparent;
+.arrows{
+    width: 3.5vw;
+    position: absolute;
+    right:6vw;
+    top:85vh;
 }
-.arrow:hover {border-color: #0A8ACB; border-width: 0.25vw;
+.arrow {
+    display: inline-block;
+    position: absolute;
+    width: 1.2vw; 
+    height: 1.2vw; 
+    background: transparent; 
+    text-indent: -9999px; 
+    border-top: 0.15vw solid #fff; 
+    border-left: 0.15vw solid #fff; 
+    transition: all .1s ease-in-out; 
+    text-decoration: none; 
+    color: transparent;
 }
-.arrow:before {display: block; height: 200%; width: 200%; margin-left: -50%; margin-top: -50%; content: ""; transform: rotate(45deg);}
-.arrow.prev {transform: rotate(-45deg); left: 0;}
-.arrow.next {transform: rotate(135deg); right: 0;}
+.arrow:hover {
+    border-color: #0A8ACB;
+    border-width: 0.25vw;
+}
+.arrow:before {
+    display: block;
+    height: 200%; 
+    width: 200%; 
+    margin-left: -50%;
+    margin-top: -50%;
+    content: ""; 
+    transform: rotate(45deg);
+}
+.arrow.prev {
+    transform: rotate(-45deg); 
+    left: 0;
+}
+.arrow.next {
+    transform: rotate(135deg);
+    right: 0;
+}
 
 .content{
     font-family: Itim,cursive;
 }
 
 .font{
-    font-size:17px;
+    font-size:2.5vh;
 }
 
+
+
 .home-button {
-    padding:10px 18px;
-    color: #fff;
-    border-radius: 2rem;
-    outline: none;
-    border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    cursor: pointer;
+    display: inline-block;
+    font-size:12px;
 }
-.home-button:hover {
-    opacity: 0.8;
-    background: whitesmoke;
-    box-shadow: none;
-    color: #395163;
-}
-.home-button:focus {
-    outline: none;
-    border: none;
-}
-.home-button {
-    /* background: linear-gradient(0deg, #395163 0%, #003367); */
-    color:#003367;
-    background-color: whitesmoke;
-}
+.button-1 {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #ffffff;
+  }
+  .button-1:hover {
+    box-shadow: 0 0 10px 0 #009dff inset, 0 0 20px #009dff;
+    border: 3px solid #009dff;
+    color: #009dff;
+  }
+
 
 td{
     padding:10px;
@@ -66,4 +107,50 @@ td{
 table tr td img{
     position: relative;
     top:6px;
+}
+i {
+    font-family: 'Roboto Mono', monospace;
+    font-size:2.4vh;
+}
+
+#container{
+    background-color:; height:100vh; width:1370px
+}
+
+#slider{
+    background-color: ;height: 100vh; width: 400vw ;
+}
+
+#slide1{
+    background-color:; width:100vw;
+}
+
+#imgdiv1{
+    background-color:; margin-top:35vh; width: 40%; margin-left:6vw;
+}
+
+#content1{
+    margin-top:20vh; 
+    margin-left:8vw; 
+    width: 70vh;
+}
+
+#heading1{
+    font-size:2.5vw
+}
+
+#slide2{
+    width: 100vw; margin-top:0vh
+}
+
+#imgdiv2{
+    background-color: ;margin-top: 28vh; margin-left:8vw;
+}
+
+#content2{
+    background-color:; margin-left:8vw; width:; margin-top:1vh; margin-right: 8vw;
+}
+
+#heading2{
+    margin:25px 0px 10px 25px
 }

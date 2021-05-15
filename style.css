@@ -13,7 +13,7 @@ body {
 
 .container {
     padding:1rem;
-    margin-top: 5%;
+    margin-top: 4.75%;
     max-width: 75%;
     display: inline-block;
 }
@@ -222,7 +222,7 @@ td {
 
 body {
   margin:0;
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
 
 }
 
@@ -233,20 +233,11 @@ body {
 }
 
 
-.flex { /*Flexbox for containers*/
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.waves {
-  position:relative;
-  width: 100%;
-  height:15vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
 }
 
 .content {
@@ -261,5 +252,5 @@ body {
   right: 30px;
   font-size: 25px;
   font-weight: bold;
-  color: rgb(187, 186, 186);
+  color:#f6f6f6;
 }

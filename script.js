@@ -11,6 +11,8 @@ let incorrectLetter;
 var averageSpeed;
 var accuracy;
 var attempt=0;
+
+// addEventListener get the text written in the text-area.
 quoteInputElement.addEventListener('input', () => {
     for (; x<1; x++){
         startTimer();
@@ -24,12 +26,10 @@ quoteInputElement.addEventListener('input', () => {
 
     const arrayQuote = quoteDisplayElement.querySelectorAll('span')
     const arrayValue = quoteInputElement.value.split('')
+
+    // This loop analyze the user input character by character whether they are correct or not.
     arrayQuote.forEach((characterSpan, index) => {
         const character = arrayValue[index]
-        // console.log(correctLetter+incorrectLetter)
-        // if ((correctLetter+incorrectLetter)<=0){
-        //     resetTimer();
-        // }
 
         if(character == null){
             characterSpan.classList.remove('correct')
@@ -48,7 +48,7 @@ quoteInputElement.addEventListener('input', () => {
         }
     })
     if((correctLetter+incorrectLetter)===str.length){
-        renderNewQuote()
+        showTest()
 
         accuracyElement.innerHTML = "100%";
         attempt++;
@@ -59,33 +59,39 @@ quoteInputElement.addEventListener('input', () => {
 })
 
 
+// This onclick event  is to get the level number (from 0 to 5) that had been selected by the user from the dropdown.
 const btn = document.querySelector('#btn');
 const sb = document.querySelector('#dropDown')
 var selectedTest=0;
+
 btn.onclick = (event) => {
     event.preventDefault();
-    // alert(sb.selectedIndex);
     selectedTest = sb.selectedIndex;
-    renderNewQuote()
+    showTest()
 };
+
+
+
 var str;
 var randomQuote;
 const RANDOM_QUOTE_API_URL = "https://api.quotable.io/random";
-        
+
+// getRandomQuote uses an API to a random quote.
 function getRandomQuote(){
     return fetch(RANDOM_QUOTE_API_URL)
     .then(response => response.json())
     .then(data => data.content)
 }
 
+// getNextQuote is the function which will be called once the test completed to load the next test.
 async function getNextQuote(){
-    
     randomQuote = await getRandomQuote()
-
 }
-getNextQuote();
 
+getNextQuote();
 var len = 100000;
+
+// getTest function returns a string requested by the user via drop-down menu.
 function getTest(selectedTest){
 
     if (selectedTest == 0){
@@ -117,7 +123,6 @@ function getTest(selectedTest){
     else if(selectedTest == 4){
         correctLetter =0;
         incorrectLetter=0;
-        // str = "This is a sample.";
         str = 'Be grateful. The universe will reciprocate with great kindness. Visualize others with happiness. Visualize others enjoying a sunny day outside. Visualize dry and parched areas with new and abundant rains. Visualize sick people receiving healing energies. Awaken to Universal Love: "All you need is love". John Lennon Awaken to Universal Compassion: "May all beings to experience happiness and the causes of happiness" - the 14th Dalai Lama. Awaken to wisdom and learning. Awaken to patience and tolerance.';
 
         return str;
@@ -132,8 +137,8 @@ function getTest(selectedTest){
     }
 }
 
-
- function renderNewQuote(){
+// showTest will receive the string by getTest().
+ function showTest(){
     const quote =  getTest(selectedTest)
     quoteDisplayElement.innerText = ''
     quote.split('').forEach(character =>{
@@ -155,7 +160,8 @@ function startTimer(){
     }, 1000)
 }
 
-
+// getTimerTime function is called in every interval of 1s by setInterval function.
+// This getTimerTime function includes the code for speed and accuracy as well. So that speed and accuracy syncs with time.
 function getTimerTime() {
 
     if((correctLetter+incorrectLetter)==len || (correctLetter+incorrectLetter)==0){
@@ -185,6 +191,7 @@ function getTimerTime() {
     return showtime;
     
 }
+// Show timer returns the time in the way XX:XX
 function showTime(){
     if (minutes<10 && seconds<10) return '0'+minutes+':0'+seconds;
     if (minutes<10) return '0'+minutes+':'+seconds;
@@ -193,10 +200,11 @@ function showTime(){
     return minutes+':'+seconds;
 }
 
+// resetTimer function just reset the timer to 00:00, once test is completed or reload a new test.
 function resetTimer(){
     minutes = 0;
     seconds = -1;
 
 
 }
-renderNewQuote();
+showTest();

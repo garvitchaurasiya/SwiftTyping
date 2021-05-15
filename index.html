@@ -7,20 +7,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script type="text/javascript">
-
-         // localStorage.setItem("serialNumber", "abc123def456");
-
-                    // console.log(localStorage.getItem("serialNumber"));
-
-
-
-        $(document).ready(function(){
-
-          $("main").hide();
-          $("logo").delay(4000).fadeOut();
-          $("main").delay( 4300 ).fadeIn( 400 );
-
-        })
+      $(document).ready(function(){
+        $("main").hide();
+        $("logo").delay(5000).fadeOut();
+        $("main").delay( 5300 ).fadeIn( 400 );
+        $(".quote").hide();
+        $(".quote").delay(2000).fadeIn(400);
+        $(".quote").delay(5000).fadeOut(400);
+      })
 
 
     </script>
@@ -41,9 +35,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
-
-    <link rel="shortcut icon" type="image/jpg" href="croped.jpg"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg"/>
     
 </head>
 <body>
@@ -56,17 +48,15 @@
       <svg id="filters">
         <defs>
           <filter id="threshold">
-            Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent.
             <feColorMatrix in="SourceGraphic"
                 type="matrix"
-                values="1 0 0 0 0
-                        0 1 0 0 0
-                        0 0 1 0 0
-                        0 0 0 255 -140" />
+                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140" />
           </filter>
         </defs>
       </svg>
     </div>
+
+    <div class="quote">That isn't writing at all, it's typing.</div>
 
 </logo>
 
@@ -98,8 +88,8 @@
     </div>
     <div class="container">
         <div class="quote-display" id="quoteDisplay"></div>
-        <!-- <textarea onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off id="quoteInput" class = "quote-input" autofocus></textarea> -->
-        <textarea id="quoteInput" class = "quote-input" autofocus></textarea>
+        <textarea onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off id="quoteInput" class = "quote-input" autofocus></textarea>
+        
     </div>
 
 <!--Content starts-->
