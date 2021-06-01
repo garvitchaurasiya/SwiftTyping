@@ -44,7 +44,6 @@ quoteInputElement.addEventListener('input', () => {
             characterSpan.classList.add('incorrect')
             incorrectLetter++;
             if (characterSpan.innerText==' '){words++}
-
         }
     })
     if((correctLetter+incorrectLetter)===str.length){
@@ -204,7 +203,7 @@ function showTime(){
 function resetTimer(){
     minutes = 0;
     seconds = -1;
-
-
 }
+
+
 showTest();
